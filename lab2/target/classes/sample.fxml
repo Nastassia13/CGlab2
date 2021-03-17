@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: #57CBFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Button fx:id="idButton" layoutX="381.0" layoutY="26.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="262.0" style="-fx-background-color: #ffffff;" text="Select a file">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+        <TableView fx:id="table" layoutX="32.0" layoutY="147.0" prefHeight="559.0" prefWidth="960.0" style="-fx-background-color: #ADE6FF;">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="220.0" style="-fx-background-color: #ADE6FF;" text="File name" />
+                <TableColumn fx:id="sizeColumn" prefWidth="180.0" style="-fx-background-color: #ADE6FF;" text="Size (px)" />
+                <TableColumn fx:id="resolutionColumn" prefWidth="229.0" style="-fx-background-color: #ADE6FF;" text="Resolution" />
+                <TableColumn fx:id="colorDepthColumn" prefWidth="123.0" style="-fx-background-color: #ADE6FF;" text="Color depth" />
+                <TableColumn fx:id="compressionColumn" prefWidth="207.0" style="-fx-background-color: #ADE6FF;" text="Compression" />
+            </columns>
+        </TableView>
+        <Button fx:id="idDirButton" layoutX="381.0" layoutY="88.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="262.0" style="-fx-background-color: #ffffff;" text="Select a directory">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+    </children>
+</AnchorPane>
